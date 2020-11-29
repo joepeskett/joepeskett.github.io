@@ -1,0 +1,40 @@
+baseURL = "https://joepeskett.github.io/"
+languageCode = "en-us"
+title = "Joe Peskett"
+theme = "hugo-theme-cleanwhite"
+
+preserveTaxonomyNames = true
+paginate = 5
+
+[params]
+  header_image = "img/header.jpg"
+  description = "My personal blog"
+  keyword = "Proteins and Point clouds"
+  slogan = "AI and Antibodies"
+
+  title_404 = "AHHHHHHHHH!!!!!!"
+
+  omit_categories = false
+
+
+  about_me = true
+  sidebar_about_description = "Machine Learning & Software engineer working in computational biology"
+  sidebar_avatar = "img/face.jpg"
+  #
+  #
+  #
+  [params.social]
+  email = "jwpeskett@gmail.com"
+  linkedin = "https://linkin.com/in/joe-peskett"
+  github = "https://github.com/joepeskett"
+
+  [[params.additional_menus]]
+  title = "ABOUT"
+  href = "/top/about"
+
+[markup]
+  [markup.tableOfContents]
+    endLevel = 2
+    startLevel = 1
+  [markup.highlight]
+    stype = "dracula"
