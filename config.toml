@@ -9,8 +9,8 @@ paginate = 5
 [params]
   header_image = "img/header.jpg"
   description = "My personal blog"
-  keyword = "Proteins and Point clouds"
-  slogan = "AI and Antibodies"
+  keyword = ""
+  slogan = "Blog - Work In Progress. "
 
   title_404 = "AHHHHHHHHH!!!!!!"
 
@@ -18,7 +18,7 @@ paginate = 5
 
 
   about_me = true
-  sidebar_about_description = "Machine Learning & Software engineer working in computational biology"
+  sidebar_about_description = "Machine Learning & Software engineer."
   sidebar_avatar = "img/face.jpg"
   #
   #
@@ -27,6 +27,7 @@ paginate = 5
   email = "jwpeskett@gmail.com"
   linkedin = "https://linkin.com/in/joe-peskett"
   github = "https://github.com/joepeskett"
+  website = "https://joepeskett.myportfolio.com"
 
   [[params.additional_menus]]
   title = "ABOUT"
