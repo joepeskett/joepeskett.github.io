@@ -2,7 +2,7 @@ baseURL = "https://joepeskett.github.io/"
 languageCode = "en-us"
 title = "Joe Peskett"
 theme = "hugo-theme-cleanwhite"
-
+staticDir = ["static"]
 preserveTaxonomyNames = true
 paginate = 5
 
