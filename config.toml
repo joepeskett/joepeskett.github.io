@@ -27,7 +27,7 @@ paginate = 5
   #
   [params.social]
   email = "jwpeskett@gmail.com"
-  linkedin = "https://linkin.com/in/joe-peskett"
+  linkedin = "https://linkedin.com/in/joe-peskett"
   github = "https://github.com/joepeskett"
   website = "https://joepeskett.myportfolio.com"
 
