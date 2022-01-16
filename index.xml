@@ -6,15 +6,23 @@
     <description>Recent content on Joe Peskett</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 29 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://joepeskett.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 09 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://joepeskett.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Welcome to Joe Peskett Blog</title>
-      <link>https://joepeskett.github.io/2020/11/29/hello-world/</link>
-      <pubDate>Sun, 29 Nov 2020 00:00:00 +0000</pubDate>
+      <title>Pretty Pictures with R</title>
+      <link>https://joepeskett.github.io/2022/01/09/art-in-R/</link>
+      <pubDate>Sun, 09 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://joepeskett.github.io/2020/11/29/hello-world/</guid>
-      <description>“Starter for ten”
- Hello World! Thanks for checking in to my blog. It&amp;rsquo;s a little empty at the moment, but hope to use 2021 to change this!</description>
+      <guid>https://joepeskett.github.io/2022/01/09/art-in-R/</guid>
+      <description>This is a little attempt that I made a while back at doing some &amp;ldquo;creative coding&amp;rdquo;/&amp;ldquo;generative art&amp;rdquo;. It&amp;rsquo;s pretty good fun and there are some excellent examples from people that do this much better than I do (check google/twitter). I&amp;rsquo;d like to have a little more of a play with this kind of project over the next year and, hopefully, can use it as a way to learn some new languages/tools along the way.</description>
+    </item>
+    
+    <item>
+      <title>Hi</title>
+      <link>https://joepeskett.github.io/2022/01/01/hello-world/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://joepeskett.github.io/2022/01/01/hello-world/</guid>
+      <description>I&amp;rsquo;ve read and been told that writing and blogging is a really helpful way to cement what you&amp;rsquo;re working on or learning. After saying that I was going to commit a little more time to this in 2021 and missing that goal miserably, I thought we&amp;rsquo;d try again for 2022. I&amp;rsquo;m setting what feels like an achievable goal of a post per month, and not to anything in particular. It will likely have some form of software/machine learning/infrastructure/biology theme, but nothing overly strict.</description>
     </item>
     
     <item>
@@ -32,7 +40,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://joepeskett.github.io/top/about/</guid>
-      <description>Hi, my name is Joe. I&amp;rsquo;m a machine learning / software engineer, working with Antiverse to help use machine learning in the discovery of new antibody therapies. I have a background in Neuroscience, with a particular interest in plasticity and learning. I have worked in the machine learning space for both public and private sector organisation, with experience in both the data science and engineering/infrastructure side of things.</description>
+      <description>Hi, my name is Joe. I&amp;rsquo;m a machine learning &amp;amp; software engineer, working with Antiverse to help use machine learning in the discovery of new antibody therapies. I have a background in Neuroscience, with a particular interest in neual plasticity, learning and behaviour. Since 2017, I have worked in the machine learning space for both public and private sector organisation, with experience in both the data science and engineering/infrastructure side of things.</description>
     </item>
     
   </channel>

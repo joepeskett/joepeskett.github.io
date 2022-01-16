@@ -2,24 +2,35 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://joepeskett.github.io/tags/art/</loc>
+    <lastmod>2022-01-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://joepeskett.github.io/categories/art/</loc>
+    <lastmod>2022-01-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://joepeskett.github.io/categories/</loc>
+    <lastmod>2022-01-09T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://joepeskett.github.io/</loc>
-    <lastmod>2020-11-29T00:00:00+00:00</lastmod>
+    <lastmod>2022-01-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://joepeskett.github.io/post/</loc>
-    <lastmod>2020-11-29T00:00:00+00:00</lastmod>
+    <lastmod>2022-01-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://joepeskett.github.io/2020/11/29/hello-world/</loc>
-    <lastmod>2020-11-29T00:00:00+00:00</lastmod>
+    <loc>https://joepeskett.github.io/2022/01/09/art-in-R/</loc>
+    <lastmod>2022-01-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://joepeskett.github.io/tags/</loc>
+    <lastmod>2022-01-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://joepeskett.github.io/2022/01/01/hello-world/</loc>
+    <lastmod>2022-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://joepeskett.github.io/search/placeholder/</loc>
   </url><url>
     <loc>https://joepeskett.github.io/top/about/</loc>
   </url><url>
-    <loc>https://joepeskett.github.io/categories/</loc>
-  </url><url>
     <loc>https://joepeskett.github.io/search/</loc>
-  </url><url>
-    <loc>https://joepeskett.github.io/tags/</loc>
   </url><url>
     <loc>https://joepeskett.github.io/top/</loc>
   </url>

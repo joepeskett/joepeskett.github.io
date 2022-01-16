@@ -15,9 +15,9 @@
     
 
     
-    <meta name="title" content="Welcome to Joe Peskett Blog" />
-    <meta property="og:title" content="Welcome to Joe Peskett Blog" />
-    <meta property="twitter:title" content="Welcome to Joe Peskett Blog" />
+    <meta name="title" content="Pretty Pictures with R" />
+    <meta property="og:title" content="Pretty Pictures with R" />
+    <meta property="twitter:title" content="Pretty Pictures with R" />
     
 
     
@@ -34,9 +34,9 @@
     <meta name="keyword"  content="">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>Welcome to Joe Peskett Blog-</title>
+    <title>Pretty Pictures with R-</title>
 
-    <link rel="canonical" href="/2020/11/29/hello-world/">
+    <link rel="canonical" href="/2022/01/09/art-in-R">
 
     <link rel="stylesheet" href="/css/iDisqus.min.css"/>
 	
@@ -94,6 +94,10 @@
                         <a href="/">Home</a>
                     </li>
                     
+                        
+                        <li>
+                            <a href="/categories/art">art</a>
+                        </li>
                         
                     
                     
@@ -153,16 +157,20 @@
                 <div class="post-heading">
                     <div class="tags">
                         
+                        <a class="tag" href="/tags/art" title="art">
+                            art
+                        </a>
+                        
                     </div>
-                    <h1>Welcome to Joe Peskett Blog</h1>
-                    <h2 class="subheading">Testing Testing</h2>
+                    <h1>Pretty Pictures with R</h1>
+                    <h2 class="subheading">A rough attempt at &#39;Generative Art&#39;</h2>
                     <span class="meta">
                         Posted by 
                         
                             Joe Peskett
                          
                         on 
-                        Sunday, November 29, 2020
+                        Sunday, January 9, 2022
                         
                         
                         
@@ -192,25 +200,80 @@
                 </header>
                 <nav id="TableOfContents">
   <ul>
-    <li>
+    <li><a href="#how-did-we-get-here">How did we get here?</a>
       <ul>
-        <li><a href="#hello-world">Hello World!</a></li>
+        <li><a href="#getting-started">Getting started</a></li>
+        <li><a href="#getting-noisy">Getting Noisy</a></li>
+        <li><a href="#spiralling-elsewhere">Spiralling elsewhere</a>
+          <ul>
+            <li><a href="#one-spiral">One Spiral</a></li>
+            <li><a href="#many-spirals-pulled-from-the-same-parameterised-distribution">Many Spirals pulled from the same parameterised distribution</a></li>
+            <li><a href="#bringing-it-all-together-the-fun-bit">Bringing it all together (the fun bit).</a></li>
+          </ul>
+        </li>
       </ul>
     </li>
   </ul>
 </nav>
                 
-                <blockquote>
-<p>“Starter for ten”</p>
-</blockquote>
-<h2 id="hello-world">Hello World!</h2>
-<p>Thanks for checking in to my blog. It&rsquo;s a little empty at the moment, but hope to use 2021 to change this!</p>
+                <p>This is a little attempt that I made a while back at doing some &ldquo;creative coding&rdquo;/&ldquo;generative art&rdquo;. It&rsquo;s pretty good fun and there are some excellent examples from people that do this much better than I do (check google/twitter). I&rsquo;d like to have a little more of a play with this kind of project over the next year and, hopefully, can use it as a way to learn some new languages/tools along the way.</p>
+<p>This particular attempt was all done in R, simply because I&rsquo;m most familiar with plotting in <code>ggplot</code> and find it much easier to use that the unnamed python alternatives. There&rsquo;s lots of packages and blog posts about how to get started with this sort of thing. The biggest take away for me was not to get bogged down trying to recreate something else that you&rsquo;ve seen someone else making - sure it&rsquo;s good for a starting point, but don&rsquo;t try and reverse engineer (or straight-up copy) their approach. So here&rsquo;s an example of what I ended up with:</p>
+<p>
+  <img src="/colour_spirals.jpeg" alt="colour spirals">
+
+</p>
+<h1 id="how-did-we-get-here">How did we get here?</h1>
+<h2 id="getting-started">Getting started</h2>
+<p>Firstly, I needed to go back and remember some GCSE maths about circles, and how to draw them on a computer with pi, sin , cos etc&hellip; Maths was not my strongest point at school :/</p>
+<p>With that remembered, we can use sequences of numbers to draw a smooth circle. Which is nice, but not that interesting and probably not generative art.</p>
+<p>
+  <img src="/single_circle.png" alt="single circle">
+
+</p>
+<h2 id="getting-noisy">Getting Noisy</h2>
+<p>Write a little function to look after generating the circles, so you can focus on messing with parameters. Writing function factories I found was particularly handy for fixing some parameters(e.g radius) but varying others within a set of circles.</p>
+<p>
+  <img src="/multi_circle.png" alt="multiple circles">
+
+</p>
+<p>Now start adding some noise in. If we&rsquo;re drawing a bunch of circles, try drawing radii and shift from a distribution. This is where it becomes a case of trying things out:</p>
+<ul>
+<li>Changing the min/max of the sequence for generating the circle. This allows you to have some only partial circles or circles where segments are &ldquo;bolder&rdquo; than others.</li>
+<li>The radius or the centre of the circle</li>
+<li>Functions to alter certain segments of the circles</li>
+<li>Start or end point of the circle</li>
+<li>Anything else</li>
+</ul>
+<h2 id="spiralling-elsewhere">Spiralling elsewhere</h2>
+<p>With some playing about I accidentally started making spirals and a bunch of other shapes. It might be useful to go back and create new functions for those shapes and experiment with them a bit more to see what looks good. If you&rsquo;ve opted to sample lots of the parameters from distributions it can take a while to find an example that you like, but I quite enjoy the (kind of) randomness of it.</p>
+<h3 id="one-spiral">One Spiral</h3>
+<p>
+  <img src="/basic_spiral.png" alt="simple spirals">
+
+</p>
+<h3 id="many-spirals-pulled-from-the-same-parameterised-distribution">Many Spirals pulled from the same parameterised distribution</h3>
+<p>
+  <img src="/multi_spiral.png" alt="multi spiral">
+
+</p>
+<h3 id="bringing-it-all-together-the-fun-bit">Bringing it all together (the fun bit).</h3>
+<p>Once you have something to build interesting shapes, it&rsquo;s a case of playing with plotting libraries and combining different sets of shapes together. The piece I was most happy with is below and comes by playing with plotting multiple groups of spirals, where the next set set is centred on a final point of a spiral from the previous set. Then playing with the colour, transparency and point size.</p>
+<p>This is a lot of fun, and something that I keep coming back to for trying something new out. Having a good grasp of how to quickly make plots (especially visually appealing plots!) is a super useful skill.</p>
+<p>
+  <img src="/colour_spirals.jpeg" alt="colour spirals">
+
+</p>
 
 
                 
 
                 <hr>
                 <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2022/01/01/hello-world/" data-toggle="tooltip" data-placement="top" title="Hi">&larr;
+                            Previous Post</a>
+                    </li>
                     
                     
                 </ul>
@@ -228,6 +291,21 @@
                 sidebar-container">
 
                 
+                
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                        
+                        
+                        
+                        <a href="/tags/art" title="art">
+                            art
+                        </a>
+                        
+                        
+                    </div>
+                </section>
                 
 
                 
@@ -297,7 +375,7 @@
             
                 </ul>
 		<p class="copyright text-muted">
-                    Copyright &copy; Joe Peskett 2021
+                    Copyright &copy; Joe Peskett 2022
                     <br>
                     <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite Hugo Theme</a> by <a href="https://zhaohuabing.com">Huabing</a> |
                     <iframe

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>art on Joe Peskett</title>
+    <link>https://joepeskett.github.io/tags/art/</link>
+    <description>Recent content in art on Joe Peskett</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 09 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://joepeskett.github.io/tags/art/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pretty Pictures with R</title>
+      <link>https://joepeskett.github.io/2022/01/09/art-in-R/</link>
+      <pubDate>Sun, 09 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://joepeskett.github.io/2022/01/09/art-in-R/</guid>
+      <description>This is a little attempt that I made a while back at doing some &amp;ldquo;creative coding&amp;rdquo;/&amp;ldquo;generative art&amp;rdquo;. It&amp;rsquo;s pretty good fun and there are some excellent examples from people that do this much better than I do (check google/twitter). I&amp;rsquo;d like to have a little more of a play with this kind of project over the next year and, hopefully, can use it as a way to learn some new languages/tools along the way.</description>
+    </item>
+    
+  </channel>
+</rss>
