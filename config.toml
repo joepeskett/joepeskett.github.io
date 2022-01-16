@@ -2,7 +2,7 @@ baseURL = "https://joepeskett.github.io/"
 languageCode = "en-us"
 title = "Joe Peskett"
 theme = "hugo-theme-cleanwhite"
-
+staticDir = ["static"]
 preserveTaxonomyNames = true
 paginate = 5
 
@@ -20,6 +20,8 @@ paginate = 5
   about_me = true
   sidebar_about_description = "Machine Learning & Software engineer."
   sidebar_avatar = "img/face.jpg"
+  featured_tags = true
+  featured_condition_size = 0
   #
   #
   #
@@ -35,7 +37,7 @@ paginate = 5
 
 [markup]
   [markup.tableOfContents]
-    endLevel = 2
+    endLevel = 3
     startLevel = 1
   [markup.highlight]
     stype = "dracula"
