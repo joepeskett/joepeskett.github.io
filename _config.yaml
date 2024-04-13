@@ -1,5 +1,4 @@
-theme: minima
-
+remote_theme: jekyll/minima
 title: Blog 
 
 author: Joe Peskett
