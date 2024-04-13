@@ -4,5 +4,8 @@ title: Blog
 
 author: Joe Peskett
 
+header_pages:
+  - about.md
+
 minima:
-  skin: dark 
+  skin: auto
